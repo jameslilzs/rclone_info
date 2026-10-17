@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Data access, storage, retention and revocation for the personal rclone Google Drive connection.">
+  <title>Privacy Policy — rclone Personal Connection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="./">rclone <span>/ personal connection</span></a><nav aria-label="Main navigation"><a href="./">Overview</a><a href="privacy.html" aria-current="page">Privacy</a></nav></header>
+  <main>
+    <p class="eyebrow">Effective October 17, 2026</p>
+    <h1>Privacy policy</h1>
+    <p class="intro">This policy describes the personal OAuth application named <strong>rclone</strong>, maintained by <a href="https://github.com/jameslilzs">jameslilzs</a>, and this public information website.</p>
+    <section>
+      <h2>Purpose and data accessed</h2>
+      <p>The connection is used by its owner to manage their own Google Drive files from a privately managed server. It accesses file contents and metadata such as names, identifiers, sizes and modification times to list, read, upload, update, rename and delete files.</p>
+      <p>The configured mount targets the <strong>Diss</strong> folder. The granted <code>https://www.googleapis.com/auth/drive</code> scope is broader and allows access to other Drive files. The folder selection is an operational setting, not an authorization boundary.</p>
+    </section>
+    <section>
+      <h2>How data is used and stored</h2>
+      <p>File data is transferred between Google Drive and the owner's server to perform requested file operations. Read and write caches may store file contents on the server. Files that are separately copied or downloaded may also remain there.</p>
+      <p>OAuth access and refresh tokens and client configuration are stored in the owner's rclone configuration on the server. A computer used to complete authorization may also retain configuration if it was saved there. The connection uses tokens rather than storing the Google account password.</p>
+      <p>Operational logs may contain file paths, metadata and error details. Tokens, private file contents and the rclone configuration are not part of this public information repository.</p>
+    </section>
+    <section>
+      <h2>Sharing and service providers</h2>
+      <p>This personal connection does not sell file data or use it for advertising. It does not intentionally publish Drive files or transmit them to unrelated services. Google processes data as the Drive provider, and the server provider supplies the infrastructure on which local files, caches and configuration reside.</p>
+      <p>This website is hosted by GitHub Pages. Visiting it does not grant access to Google Drive or send Drive files to GitHub. The pages contain no application analytics, third-party scripts, forms or application cookies. GitHub may process visitor information such as IP addresses and request logs under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p>
+    </section>
+    <section>
+      <h2>Retention and deletion</h2>
+      <p>Drive files remain in the owner's account until the owner changes or deletes them. Local cache retention depends on rclone's cache settings and whether files are open or awaiting upload; cache limits do not guarantee immediate deletion. Downloaded copies, logs and saved credentials remain until the owner removes them or their configured retention rules apply.</p>
+      <p>To remove local connection data, first allow pending uploads to finish and stop the mount, then remove the saved rclone connection, its cache, relevant logs and any separately downloaded copies. Removing local connection data does not itself delete files from Google Drive.</p>
+    </section>
+    <section>
+      <h2>Control and revocation</h2>
+      <p>The owner can revoke this application's access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation prevents further authorized API access but does not erase files or credentials already stored locally. The owner controls file deletion in Drive and on their server separately.</p>
+    </section>
+    <section>
+      <h2>Contact and updates</h2>
+      <p>For general questions or corrections, contact the maintainer through the <a href="https://github.com/jameslilzs/rclone_info/issues">repository issue tracker</a>. Issues are public; do not post credentials, tokens or private file contents. This policy should be updated when the connection's data practices change; the effective date above identifies the current version.</p>
+    </section>
+  </main>
+  <footer><a href="./">Application overview</a> · Personal use · Updated October 17, 2026</footer>
+</body>
+</html>

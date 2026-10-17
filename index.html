@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about a personal rclone connection between Google Drive and a privately managed server.">
+  <title>rclone — Personal Drive Connection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="./">rclone <span>/ personal connection</span></a><nav aria-label="Main navigation"><a href="./" aria-current="page">Overview</a><a href="privacy.html">Privacy</a></nav></header>
+  <main>
+    <p class="eyebrow">Application information</p>
+    <h1>A personal connection<br>to Google Drive.</h1>
+    <p class="intro">This OAuth application, named <strong>rclone</strong>, lets its owner use the rclone command-line tool to access their Google Drive files from a privately managed server.</p>
+    <section>
+      <h2>What it does</h2>
+      <p>The connection mounts the owner's selected <strong>Diss</strong> folder as a directory on their server. It supports listing, reading, uploading, editing, renaming and deleting files. Changes made through the mount affect the corresponding files in Google Drive.</p>
+    </section>
+    <section>
+      <h2>Access and authorization</h2>
+      <p>The owner signs in through Google's authorization page and grants access. The application requests the <code>https://www.googleapis.com/auth/drive</code> scope, which permits access to Drive files beyond the selected folder. Selecting a folder for the mount limits the configured operation; it does not narrow the OAuth permission.</p>
+      <p>OAuth tokens allow the connection to work without giving rclone the Google account password. Access can be revoked in the owner's <a href="https://myaccount.google.com/connections">Google Account connections</a>.</p>
+    </section>
+    <section>
+      <h2>Who operates it</h2>
+      <p>This is a personal configuration maintained by <a href="https://github.com/jameslilzs">jameslilzs</a>. It is not offered as a public file-storage service, and this website does not provide a sign-in or file-upload feature.</p>
+      <p>The connection uses the independent open-source <a href="https://rclone.org/">rclone project</a>. This information site is not the official rclone website and is not operated by Google.</p>
+    </section>
+    <aside><h2>Privacy and contact</h2><p>Read the <a href="privacy.html">privacy policy</a> for details about file access, caching, retention and revocation. General questions can be raised in the <a href="https://github.com/jameslilzs/rclone_info/issues">information repository</a>. Do not include tokens or private file contents in public issues.</p></aside>
+  </main>
+  <footer>Personal use · <a href="privacy.html">Privacy policy</a> · Updated October 17, 2026</footer>
+</body>
+</html>
